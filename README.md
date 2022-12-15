@@ -50,15 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Build Awesome Book project with JavaScript ES6**
-- **Add Books to a book list**
-- **Delete Books from the book list**
-- **Save data to local storage**
-- **Modify the Awesome Books application to have a navigation Bar**
-- **Three content sections:**
-  _1 Books list._
-  _2 Add book form._
-  _3 Contact info._
+- **Build a To-Do-List with JavaScript ES6 and Webpack**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,20 +62,17 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-```sh
-  git clone https://github.com/asifaminisonline/ES6-Modules.git
-```
-
 ### Install
 
 <!-- AUTHORS -->
 
 ## 👥 Authors
 
-<a name="Asif Amin" ></a>
+👤<a name="Naol Kidanu" ></a>
 
+- GitHub: [@naolkidanu](https://github.com/naolkidanu)
+- Twitter: [@naol](https://twitter.com/naolkidanu)
+- LinkedIn: [@naolkidanu](https://www.linkedin.com/in/naolkidanu/)
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -96,10 +85,14 @@ If you like this project give me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank all my fellow micronauts.
+I would like to thank all my fellow micronauts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
+
+## 📝 License
+
+This project is [MIT](https://github.com/binhussen/todo-list/blob/main/LICENSE.md) licensed.
