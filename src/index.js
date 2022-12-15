@@ -1,0 +1,2 @@
+ import generateJoke from "./genratejoke";
+ 
