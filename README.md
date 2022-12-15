@@ -24,7 +24,7 @@
 
 # 📖 TO_DO_LIST <a name="about-project"></a>
 
-**Awesome Books** is a simple booklist app in ES6. It's a part of javascript exercise of module 2 of Microvrese's full stack web develeopment course.
+**To-Do-list** is a simple booklist app in ES6. It's a part of javascript exercise of module 2 of Microvrese's full stack web develeopment course.
 
 ## 🛠 Built With <a name="built-with"></a>
 
