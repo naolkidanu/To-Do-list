@@ -10,7 +10,7 @@
 			integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
 			crossorigin="anonymous"
 		/>
-		<title>ToDo List</title>
+		<title>ToDo list</title>
 	<script defer src="/runtime.bundle.js"></script><script defer src="/index.bundle.js"></script></head>
 	<body>
 		<div class="container">
