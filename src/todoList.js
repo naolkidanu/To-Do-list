@@ -9,12 +9,11 @@ export default class ToDo {
     this.getList = () => ToDo.list;
   }
 
-  update(){
-    if (this.complete){
+  update() {
+    if (this.complete) {
       this.complete = false;
     } else {
       this.complete = true;
     }
   }
-  
 }
