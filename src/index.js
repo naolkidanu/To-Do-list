@@ -16,7 +16,8 @@ addInput.addEventListener('keydown', (event) => {
   }
 });
 
-const clearButton = document.getElementById('clear-btn');
+
+const clearButton=document.getElementById('clear-btn');
 clearButton.addEventListener('click', () => {
   deleteAllCompleted(ToDo);
   populateList();
