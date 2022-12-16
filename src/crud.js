@@ -47,8 +47,7 @@ export function populateList() {
       ToDo.list[index].update();
       text.classList.toggle('complete');
       textInput.classList.toggle('complete');
-      // textInput.classList.toggle('complete');
-      // localStorage.setItem('todoList', JSON.stringify(ToDo.list));
+      localStorage.setItem('todoList', JSON.stringify(ToDo.list));
     });
 
     text.addEventListener('click', () => {
