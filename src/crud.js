@@ -50,22 +50,18 @@ export function populateList() {
       localStorage.setItem('todoList', JSON.stringify(ToDo.list));
     });
 
-    // Edit functionality
     text.addEventListener('click', () => {
       text.style.display = 'none';
       textInput.classList.toggle('edit-item');
     });
 
     textInput.addEventListener('keydown', (e) => {
-      // Follow value
       text.innerHTML = textInput.value;
 
-      // Update list
       const index = parseInt(listItem.id, 10);
       edit(index, text.innerHTML);
 
       if (e.code === 'Enter') {
-        // Update UI
         text.style.display = 'block';
         textInput.classList.toggle('edit-item');
       }
