@@ -1,100 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: #545862;
 }
 
-.container {
-  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
-  max-width: 500px;
-  margin: 30vh auto;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-panel {
+  min-width: 40%;
+  max-width: 75%;
+  margin: auto;
+  display: grid;
+  box-shadow: 0 0 10px #888;
 }
 
 .title {
-  font-weight: 400;
-  padding: 2rem;
-  line-height: 30px;
-  margin: 0;
-  width: 100%;
-}
-
-.today-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #f5f5f5;
-}
-
-.btn {
-  width: 100%;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  background-color: #fff;
-}
-
-.btn-refresh {
-  width: 2rem;
-  background-color: #f5f5f5;
-}
-
-.input-list {
-  padding: 7px 0 0 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  display: flex;
-}
-
-.input {
-  width: 100%;
-  line-height: 50px;
-  height: 50px;
-  border: none;
-  font-style: italic;
-  font-size: 1.1rem;
-}
-
-.btn-add {
-  width: 2rem;
-}
-
-.list {
-  list-style: none;
-  position: relative;
-  text-align: left;
-}
-
-.task {
-  background-color: #fff;
-  padding: 7px 0 7px 3em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
 }
 
-.checkbox {
-  height: 16px;
-  width: 16px;
-  margin: 17px 0;
-  margin-left: -2em;
+.list-title {
+  margin: 0;
+  font-size: 24px;
 }
 
-.disc {
-  font-size: 1rem;
+.add-input {
+  border: 1px solid black;
+  font-style: italic;
 }
 
-.btn-clear {
-  padding: 1rem;
-  background-color: #f5f5f5;
+.add-input,
+.clear-btn {
+  border: none;
 }
 
-.btn-select {
-  width: 2.5rem;
+.add-input,
+.item-container,
+.clear-btn {
+  padding: 24px;
+  border-bottom: 1px solid #b5b5b5;
+  display: flex;
+}
+
+.clear-btn {
+  color: gray;
+  font-size: 18px;
+  border: none;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.text-area {
+  display: none;
+}
+
+.item-container {
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.item-container span,
+.item-container textarea {
+  width: 200px;
+  flex-grow: 1;
+}
+
+.cancel-btn {
+  height: 20px;
+  width: 20px;
+}
+
+.edit-item {
+  display: inline;
+  font: inherit;
+  padding: 0;
+  height: 18px;
+  border: none;
+  outline: none;
+  resize: none;
+  cursor: text;
+  overflow: auto;
 }

@@ -1,35 +1,25 @@
 import './style.css';
+import { add, deleteAllCompleted, populateList } from './crud.js';
+import ToDo from './todoList.js';
 
-const tasks = [
-  {
-    description: 'Read Project archtecture',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'Read Documentation',
-    completed: true,
-    index: 1,
-  },
-  {
-    description: 'Training on js projects',
-    completed: false,
-    index: 2,
-  },
-];
+const list = JSON.parse(localStorage.getItem('todoList'));
+if (list) {
+  list.forEach((item) => new ToDo(item.description, item.complete));
+}
 
-const tasksList = document.querySelector('.list');
-
-tasks.sort((a, b) => a.index - b.index);
-
-tasks.forEach((task) => {
-  tasksList.innerHTML += `
-        <li class="task">
-            <input class="checkbox" type="checkbox" ${
-  task.completed ? 'checked' : 'unchecked'
-}>
-            <p class="disc">${task.description}</p>
-            <button type="button" class="btn btn-select"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
-        </li>
-  `;
+const addInput = document.getElementById('add-input');
+addInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    add(addInput.value);
+    addInput.value = '';
+    populateList();
+  }
 });
+
+const clearButton = document.getElementById('clear-btn');
+clearButton.addEventListener('click', () => {
+  deleteAllCompleted(ToDo);
+  populateList();
+});
+
+populateList();
